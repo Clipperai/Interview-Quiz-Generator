@@ -11,12 +11,24 @@ with st.form('My form'):
     role = st.selectbox("Select Role", ['Frontend', 'Backend', 'Full Stack', 'Core CS'])
     difficulty = st.selectbox("Difficulty", ['Easy','Medium', 'Hard'])
     topic = st.selectbox("Select:", ['Python Quiz', 'OOPS Quiz', 'OS Quiz', 'C Quiz', 'DSA Quiz', 'CN'])
-    command = [role, difficulty, topic]
+    prompt = f"""
+Generate 5 {difficulty} level {topic} questions for {role} interviews.
+
+    Format:
+    Q1:
+    Options:
+    A)
+    B)
+    C)
+    D)
+    Answer:
+    Explanation:
+    """
 
     start = st.form_submit_button("Start Quiz")        
 
     if start:
-        response = ask_ai(command)
+        response = ask_ai(prompt)
         st.write(response)
 
 
