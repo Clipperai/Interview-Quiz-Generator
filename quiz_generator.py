@@ -16,21 +16,22 @@ with st.form('My form'):
     start = st.form_submit_button("Start Quiz")        
 
     if start:
-        prompt = f"""
-Generate 5 {difficulty} level {topic} questions for {role} interviews.
-
-    Format:
-    Q1: \n
-    Options:\n
-    A)
-    B)
-    C)
-    D) \n
-    Answer: \n
-    Explanation:
-    """
-        response = ask_ai(prompt)
-        st.write(response)
-
+        with st.spinner("Generating..."):
+            prompt = f"""
+    Generate 5 {difficulty} level {topic} questions for {role} interviews.
+    
+        Format:
+        Q1: \n
+        Options:\n
+        A)
+        B)
+        C)
+        D) \n
+        Answer: \n
+        Explanation:
+        """
+            response = ask_ai(prompt)
+            st.write(response)
+    
 
 
