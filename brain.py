@@ -1,7 +1,7 @@
 from groq import Groq # type: ignore
 import streamlit as st
 
-backup = st.secrets["GROQ_API_KEY"]
+backup = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 SYSTEM_PROMPT = """ 
 You are an industry-level AI Quiz Generator specialized in interview and placement preparation.
