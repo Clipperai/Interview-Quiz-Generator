@@ -1,12 +1,8 @@
 from groq import Groq # type: ignore
 from dotenv import load_dotenv
-import os
+import streamlit as st
 
-load_dotenv()
-
-backup = Groq(api_key=os.getenv("GROQ_API_KEY"))
-
-
+backup = st.secrets["GROQ_API_KEY"]
 
 SYSTEM_PROMPT = """ 
 You are an industry-level AI Quiz Generator specialized in interview and placement preparation.
