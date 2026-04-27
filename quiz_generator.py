@@ -20,13 +20,13 @@ with st.form('My form'):
 Generate 5 {difficulty} level {topic} questions for {role} interviews.
 
     Format:
-    Q1:
-    Options:
+    Q1: \n
+    Options:\n
     A)
     B)
     C)
-    D)
-    Answer:
+    D) \n
+    Answer: \n
     Explanation:
     """
         response = ask_ai(prompt)
