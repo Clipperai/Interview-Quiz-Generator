@@ -1,5 +1,4 @@
 from groq import Groq # type: ignore
-from dotenv import load_dotenv
 import streamlit as st
 
 backup = st.secrets["GROQ_API_KEY"]
