@@ -11,12 +11,12 @@ with st.form('My form'):
     role = st.selectbox("Select Role", ['Frontend', 'Backend', 'Full Stack', 'Core CS'])
     difficulty = st.selectbox("Difficulty", ['Easy','Medium', 'Hard'])
     topic = st.selectbox("Select:", ['Python Quiz', 'OOPS Quiz', 'OS Quiz', 'C Quiz', 'DSA Quiz', 'CN'])
-    list = [role, difficulty, topic]
+    command = [role, difficulty, topic]
 
     start = st.form_submit_button("Start Quiz")        
 
     if start:
-        response = ask_ai(list)
+        response = ask_ai(command)
         st.write(response)
 
 
