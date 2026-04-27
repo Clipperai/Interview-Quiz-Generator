@@ -10,7 +10,7 @@ with st.form('My form'):
 
     role = st.selectbox("Select Role", ['Frontend', 'Backend', 'Full Stack', 'Core CS'])
     difficulty = st.selectbox("Difficulty", ['Easy','Medium', 'Hard'])
-    topic = st.selectbox("Select:", ['Python Quiz', 'OOPS Quiz', 'OS Quiz', 'C Quiz', 'DSA Quiz', 'CN', 'Aptitude'])
+    topic = st.selectbox("Select:", ['Python', 'OOPs', 'OS', 'DBMS', 'DSA', 'CN', 'Aptitude'])
     
 
     start = st.form_submit_button("Start Quiz")        
