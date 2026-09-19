@@ -1,5 +1,5 @@
 import streamlit as st
-from brain import generate_quiz, analyze_ai
+from brain import generate_quiz
 
 
 st.title("Interview Quiz Generator AI")
