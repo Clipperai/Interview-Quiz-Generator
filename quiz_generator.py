@@ -40,5 +40,5 @@ if "quiz" in st.session_state:
 
             st.divider()
             st.subheader("Your Answers:")
-            st.write(answers)
+            st.code(answers)
 
