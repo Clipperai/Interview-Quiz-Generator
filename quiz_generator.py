@@ -7,7 +7,7 @@ st.caption("-v.1.1")
 
 
 # 1. Generate quiz only when the button is clicked
-if st.button("Generate Quiz"):
+if st.button("Generate Quiz"):https://github.com/Clipperai/Interview-Quiz-Generator/edit/main/quiz_generator.py
 
     quiz_data = generate_quiz()
 
@@ -37,11 +37,8 @@ if "quiz" in st.session_state:
         submitted = st.form_submit_button("Submit")
 
         if submitted:
+
+            st.divider()
+            st.subheader("Your Answers:")
             st.write(answers)
 
-st.download_button(
-    label="Download Text File",
-    data= str(quiz),
-    file_name="answers.text",
-    mime="text/plain"
-)
