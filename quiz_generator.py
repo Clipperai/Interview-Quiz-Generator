@@ -7,7 +7,7 @@ st.caption("-v.1.1")
 
 
 # 1. Generate quiz only when the button is clicked
-if st.button("Generate Quiz"):https://github.com/Clipperai/Interview-Quiz-Generator/edit/main/quiz_generator.py
+if st.button("Generate Quiz"):
 
     quiz_data = generate_quiz()
 
