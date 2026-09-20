@@ -61,7 +61,7 @@ def generate_quiz():
         
         # Try fallback model
         response = client.chat.completions.create(
-            model="qwen/qwen3.6-27b",
+            model="openai/gpt-oss-safeguard-20b",
             messages=[
                 {
                     "role": "user",
